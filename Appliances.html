@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>سوق الكتروني لبيع الادوات الكهربائية</title>
+    <link rel="stylesheet" href=".style.css">
+    <script src="myFunction.js"></script>
+</head>
+<body id="#main">
+
+    <h1 class="h1"> اهلا بك في متجربنا لبيع الأدوات الكهربائية </h1><br>
+    <h2>يمكنك الأطلاع على الأجهزة المتاحة لنا حاليا في المتجر واختيار ما يناسبك منها والاتطلاع على المواصفات اذا اردت</h2>
+    <br>
+
+    <!-- الجدول الأ,ل  -->
+    <table class="table1" cellspacing = "5" cellpadding="10" align="right"> 
+
+        <!-- العناوين -->
+        <tr>
+            <th>صورة</th>
+            <th>السعر</th>
+            <th>التفاصيل</th>
+            <th>صورة المنتج</th>
+        </tr>
+        
+        <!-- المنتج الأوال -->
+        <tr>
+            <td>
+                <img src="gassala.png" alt="غساله" class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="samsungprice()">
+                 <input type="hidden" value="2000000" id="samsung">
+            </td>
+            <td> 2000000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>الحجم 400 لتر</li>
+                <li>تحوي شاشة رقمية</li>
+                <li> اوتوماتيكية بالكامل </li>
+            </ul></td>
+            <td>غساله سامسونغ </td>
+        </tr>
+             
+        <!-- المنتج الالثاني -->
+        <tr>
+            <td>
+                <img src="khalat.png" alt="خلاط" class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="khlatprice()">
+                 <input type="hidden" value="300000" id="khlat">
+            </td>
+            <td > 300000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>بقدره 400 واط</li>
+                <li>يحوي ثلاث سرعات</li>
+                <li>الحجم 30 لتر</li>
+            </ul></td>
+            <td>خلاط مولينوكس</td>
+        </tr>
+
+        <!-- المنتج الثالث -->
+        <tr>
+            <td>
+                <img src="mkeef.png" alt="مكييف"class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="mkefprice()">
+                 <input type="hidden" value="5300000" id="mkef">
+            </td>
+            <td > 5300000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>تلاتة طن</li>
+                <li>انفينتر</li>
+                <li>تبريد وتدفئة</li>
+            </ul></td>
+            <td>مكييف مايدا</td>
+        </tr>
+
+        <!-- المنتج الرباع -->
+        <tr>
+            <td>
+                <img src="frn.png" alt="فرن"class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="frnprice()">
+                 <input type="hidden" value="600000" id="frn">
+            </td>
+            <td > 600000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>بقدره 2200 واط</li>
+                <li>يحوي مؤقت</li>
+                <li> بسعة 70 لتر</li>
+            </ul></td>
+            <td>فرن رويال</td>
+        </tr>
+
+        <!-- المنتج الخامس -->
+        <tr>
+            <td>
+                <img src="shasha.png" alt="شاشة"class="img" width="100" height="80"><br>
+                <input class="Add_to_cart" type="button" value="Add to cart" onclick="shashaprice()">
+                <input type="hidden" value="3000000" id="shasha">
+            </td>
+            <td > 3000000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>wifi اتصال</li>
+                <li>تعطي 16 مليون لون</li>
+                <li>الحجم 40 بوصة</li>
+            </ul></td>
+            <td>شاشة ساسمسونغ سمارت</td>
+        </tr>
+    </table>
+
+            <!-- الجدول الثاني -->
+    <table class="table12" cellspacing = "5" cellpadding="10" align="right">   
+                <!-- العناوين -->
+        <tr>
+            <th>صورة</th>
+            <th>السعر</th>
+            <th>التفاصيل</th>
+            <th>صورة المنتج</th>
+        </tr>
+
+        <!-- المنتج السادس -->
+        <tr>
+            <td>
+                <img src="raotar.png" alt="راوتر"class="img" width="100"><br>
+                 <input  class="Add_to_cart" type="button" value="Add to cart" onclick="raotarprice()">
+                 <input type="hidden" value="90000" id="raotar">
+            </td>
+            <td > 90000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>يعمل على 12 فولط</li>
+                <li>سرعة تصل الى 16 ميغا</li>
+                <li> شبكة عل مساحة 200 متر مربع</li>
+            </ul></td>
+            <td>d-link راوتر </td>
+        </tr>
+
+        <!-- المنتج السابع -->
+        <tr>
+            <td>
+                <img src="sohon.png" alt="غساله صحون"class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="ghasalaprice()">
+                 <input type="hidden" value="350000" id="gassala">
+
+            </td>
+            <td > 350000 ل.س </td>
+            <td ><ul class="atributes">
+                <li> ثلاث رفوف </li>
+                <li> حجم 20 لتر </li>
+                <li>تنظيف وتنشيف </li>
+            </ul></td>
+            <td>غسالخ صحون بيكو</td>
+        </tr>
+
+        <!-- المنتج الثامن -->
+        <tr>
+            <td>
+                <img src="mroha.png" alt="مروحة كهربائية" class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="mrohaprice()">
+                 <input type="hidden" value="300000" id="mroha">
+
+            </td>
+            <td > 300000 ل.س </td>
+            <td ><ul class="atributes">
+                <li> متحركه بجميع الاتجاهات </li>
+                <li> تحوي سرعات مختلفة </li>
+                <li> صوت هادء  </li>
+            </ul></td>
+            <td>مروحة ستارغيت</td>
+        </tr>
+
+        <!-- المنتج التاسع -->
+        <tr>
+            <td>
+                <img src="mdfah.png" alt="مدفئة كهربائية" class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="mdfahaprice()">
+                 <input type="hidden" value="400000" id="mdfah">
+
+            </td>
+            <td > 400000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>تحوي ثلاث سياخ حرارة </li>
+                <li>تحوي مروحة هواء ساخن </li>
+                <li>تحوي دواليب لسهولة الحركة  </li>
+            </ul></td>
+            <td>مدفئة ميديا</td>
+        </tr>
+
+        <!-- المنتج العاشر -->
+        <tr>
+            <td>
+                <img src="LG.png" alt="شاشة حاسوب" class="img" width="100"><br>
+                 <input class="Add_to_cart" type="button" value="Add to cart" onclick="shashapcprice()">
+                 <input type="hidden" value="3000000" id="shashapc">
+            </td>
+            <td > 3000000 ل.س </td>
+            <td ><ul class="atributes">
+                <li>4k بدقة </li>
+                <li>في الخلف rgb الوان </li>
+                <li>hdmi تحوي ثلاث مأخذ </li>
+            </ul></td>
+            <td>LG شاشة</td>
+        </tr>
+    
+    </table >
+
+        
+                <!-- سلة المشتريات -->
+    <table class="table2">
+        <form action="">
+        <caption><h1 sy>سلة المشتريات</h1></caption>
+                <!-- العناوين -->
+        <tr>
+            <th style="padding: 5px;">السعر الاجمالي</th>
+            <th style=" min-width: 70px;">الكمية</th>
+            <th>السعر بالليرة </th>
+            <th>المادة</th>
+            <th>م.</th>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><output type="text"readonly size="4" style="border-radius: 8px;" id="samsungS"></td>
+            <td><output type="text" readonly size="10" style="border-radius: 8px;" id="samsungO"></output></td>
+            <td> 2000000 ل.س </td>
+            <td>غساله سامسونغ</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10" style="border-radius: 8px;" id="khlatS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="khlatO"></td>
+            <td>300000 ل.س</td>
+            <td>خلاط مولينوكس</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10" style="border-radius: 8px;" id="mkefS"></td>
+            <td><output type="text"readonly size="4" style="border-radius: 8px;" id="mkefO"></td>
+            <td>5300000 ل.س</td>
+            <td>مكييف مايدا</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="frnS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="frnO"></td>
+            <td>600000 ل.س</td>
+            <td>فرن رويال</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="shashaS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="shashaO"></td>
+            <td>3000000 ل.س</td>
+            <td>شاشة ساسمسونغ سمارت</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="raotarS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="raotarO"></td>
+            <td>90000 ل.س</td>
+            <td>d-link راوتر</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="gassalaS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="gassalaO"></td>
+            <td>350000 ل.س</td>
+            <td>غسالخ صحون بيكو</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="mrohaS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="mrohaO"></td>
+            <td>300000 ل.س</td>
+            <td>مروحة ستارغيت</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="mdfahS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="mdfahO"></td>
+            <td>400000 ل.س</td>
+            <td>مدفئة ميديا</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="shashapcS"></td>
+            <td><output type="text"readonly size="4"style="border-radius: 8px;" id="shashapcO"></td>
+            <td>3000000 ل.س</td>
+            <td>LG شاشة</td>
+            <td>10</td>
+        </tr>
+                        <!-- سعر المنتجات مندون اضافة الضريبة -->
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="sum"></td>
+            <td colspan="3">: سعر المنتجات قبل الضريبة</td>
+            <td></td>
+        </tr>
+                            <!-- الضريبة من دون سعر المنتجات -->
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="drephS"></td>
+            <td colspan="3">: %5 الضريبة</td>
+            <td></td>
+        </tr>
+        </tr>
+                                    <!-- المنتجات مضافة اليها الضريبة -->
+        <tr>
+            <td><output type="text"readonly size="10"style="border-radius: 8px;" id="sum%"></td>
+            <td colspan="3">: المجموع النهائي</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="5"> <input type="reset" value="الغاء" class="Add_to_cart">
+            <input type="button" class="Add_to_cart" value="متابعة" onclick="movetoform()"></td>
+        </tr>
+        </form>
+    </table>
+
+    <hr>
+
+                                                        <!-- ادخال معلومات الشخصية -->
+    <div class="form" id="form">
+        <form>
+         <input class="input_form" type="text" id="name" placeholder=" الاسم والكنية">:الأسم الكامل<br><br>
+         <input class="input_form" type="text" id="databrith" placeholder="dd/mm/yyyy">:تاريخ الولادة<br><br>
+         <input class="input_form" type="text" id="phone" placeholder="09xxxxxxxx">:رقم الهاتف<br><br>
+         <input class="input_form" type="text" id="serial" required style="margin-left: 2px;">:الرقم الوطني <br><br>
+         <input class="input_form" type="text" id="email" placeholder="username_@gmail.com" style="margin-right:20px ;">:الأيميل<br><br>
+         <input class="input_form" type="text" placeholder="البلد/المحافظة/المدية">:مكان الأقامة<br><br><br><br>
+
+                                            <!-- عند تأكيد العملية يتم التحقق من المدخلات -->
+        <input class="input_form"  type="submit" value="تأكيد العملية" onclick="validateInput()"><br><br><br>
+                 
+        <div class="container">
+            <div id="captcha" class="captcha">
+            </div>
+            <input type="text" placeholder="Enter Captcha" id="cpatchaTextBox" class="input"/>
+                                <!-- عند الضغط على الزر سوف يتحقق من مدخلات الكابتشا -->
+            <button onclick="validateCaptcha()" class="button">التحقق</button>
+         </div>
+    
+        </form>
+    </div>
+</body>
+</html>
